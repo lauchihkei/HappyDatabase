@@ -34,7 +34,8 @@ class FeelingAdapter internal constructor(context: Context)
     }
 
     internal fun setFeeling(feeling: List<Feeling>){
-        this.feelings = feelings
+        this.feelings = feeling
+        notifyDataSetChanged()
     }
 
 

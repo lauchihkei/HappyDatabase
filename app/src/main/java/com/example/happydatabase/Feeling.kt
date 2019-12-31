@@ -6,8 +6,9 @@ import java.util.*
 
 @Entity(tableName = "feeling")
 data class Feeling (
-    @PrimaryKey(autoGenerate = true ) val id:Int ,
-    val mode:Int ,
+    @PrimaryKey(autoGenerate = true )
+    val id:Int ,
+    val mode:Int , // 1= sad . 2 = neutra, 3 = happy
     val remarks : String ,
     val created_at: Long = System.currentTimeMillis()
 
